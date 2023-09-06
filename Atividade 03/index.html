@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Como usar JQuery</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-
+/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div><h1>Lista de nomes</h1></div>
+    <div>
+      <url style="font-size: 35px">
+        <li>Maria</li>
+        <li>Jullia</li>
+        <li>Marcos</li>
+        <li>Aline</li>
+        <li>Adriana</li>
+      </url>
+    </div>
+    <div>
+      <button id="btn">Click aqui</button>
+    </div>
+
+   <!-- <script>
+        $('h1').append(" de pessoas") // inseri informação
+        </script>-->
+
+        <!-- <script>
+            $('#btn').on("click",botao) // Ao clicar no botão sumira o titulo
+            function botao(){
+            $('h1').remove()
+            }
+            </script>-->
+
+
+            <script>
+                $('#btn').on("click",botao) // Ao clicar no botão a lista ficara azul
+                function botao(){
+                $('li').css({'color':'blue'})
+                }
+                </script>
+
+
+    <script>
+      $("h1").fadeOut("2000").fadeIn("2000"); // Sair da telapor 2 segundos e reaparecer
+    </script>
+  </body>
+</html>
